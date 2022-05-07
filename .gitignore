@@ -26,5 +26,6 @@ archive.zip
 
 #Credentials
 
-intenalr/platform/keys
+../internal/platform/keys/
+
 keys.json
