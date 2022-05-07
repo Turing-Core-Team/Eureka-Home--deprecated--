@@ -1,5 +1,5 @@
 from internal.opportunities.core.entity.opportunities import Opportunities
-from internal.opportunities.core.usecase.get_by_config import UseCaseGetByDescription
+from internal.opportunities.core.usecase.get_by_description import UseCaseGetByDescription
 from src.handler.getopportunitiesbydescription.contract.request import Params
 from src.handler.getopportunitiesbydescription.mapper.mapper import Mapper
 

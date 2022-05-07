@@ -1,7 +1,7 @@
 class Params:
-    language: str
-    config_name: str
+    description: str
+    tags: str
 
-    def __init__(self, language: str, config_name: str):
-        self.language = language
-        self.config_name = config_name
+    def __init__(self, description: str, tags: str):
+        self.description = description
+        self.tags = tags
