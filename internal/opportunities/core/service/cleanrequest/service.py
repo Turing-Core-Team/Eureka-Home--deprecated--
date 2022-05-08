@@ -1,13 +1,14 @@
 from typing import List
 
-from internal.opportunities.core.entity.path import Path
-from internal.opportunities.core.query.get_config import GetConfig
+
+from internal.opportunities.core.query.get_request import GetRequest
 from internal.opportunities.core.usecase.ports import CleanRequestServiceInterface
-from internal.opportunities.infrastructure.getpath.config.process import ProcessPathConfig
+
+from internal.opportunities.infrastructure.cleanrequest.process import ProcessCleanRequest
 
 
 class ServiceCleanRequest(CleanRequestServiceInterface):
-    path_config = ProcessPathConfig()
+    request = ProcessCleanRequest()
 
-    def create_request(self, query: GetConfig) -> List[Path]:
-        return self.path_config.get(query)
+    def create_request(self, query: GetRequest) -> List[Path]:
+        return self.request.get(query)
